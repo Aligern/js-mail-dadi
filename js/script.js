@@ -2,7 +2,7 @@
 const button = document.querySelector('btn btn-outline-dark');
 console.log(button)
 
-button.addEventListener('click', function()){
+button.addEventListener('click', function(){
     console.log('Sto cercando la tua mail');
     const email = document.getElementById('emailinput').value;
     console.log(email);
@@ -17,5 +17,7 @@ button.addEventListener('click', function()){
     for (let i = 0; i < mailDatabase.length; i++) {
         console.log(i);
     }
-};
+
+}
+);
 
