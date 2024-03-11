@@ -50,19 +50,28 @@ const button2 = document.querySelector('.btn.btn-outline-primary');
 console.log(button2);
 // here we explain the machine what to do after the click
 button2.addEventListener('click', function(){
+    // here we give img to our variable
     let diceImg = document.getElementById('dice-img');
     console.log(diceImg);
+    // here we add
+    let phrase = document.getElementById('phrase');
+    console.log(phrase);
     // here we specify how the dices should work by attributing them the randomizer function
     let playerDice = getRndInteger(1,6);
     console.log(playerDice);
     let pcDice = getRndInteger(1,6);
     console.log(pcDice);
     if (playerDice === pcDice) {
-        
+        diceImg.innerHTML = `<img src="/img/${playerDice}.svg" alt=""><img src="/img/${pcDice}.svg" alt="">`;
+        phrase.innerHTML =`Pareggio!`
         console.log('Hai pareggiato');
     } else if (playerDice < pcDice) {
+        diceImg.innerHTML = `<img src="/img/${playerDice}.svg" alt=""><img src="/img/${pcDice}.svg" alt="">`;
+        phrase.innerHTML =`Hai perso!`
         console.log('hai perso! =( ');
     } else {
-        console.log('hai vinto!') 
+        diceImg.innerHTML = `<img src="/img/${playerDice}.svg" alt=""><img src="/img/${pcDice}.svg" alt="">`;
+        phrase.innerHTML =`Complimenti! Hai vinto!`
+        console.log('hai vinto!');
     }
 });
