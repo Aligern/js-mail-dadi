@@ -14,7 +14,7 @@ button.addEventListener('click', function()){
         "email-4@gmail.com"
 ];
     console.log(mailDatabase);
-    for (let i = 0, i < mailDatabase.length, i++) {
+    for (let i = 0; i < mailDatabase.length; i++) {
         console.log(i);
     }
 };
