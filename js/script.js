@@ -4,7 +4,7 @@ console.log(button)
 
 button.addEventListener('click', function()){
     console.log('Sto cercando la tua mail');
-    const email = parseInt(document.getElementById('emailinput').value);
+    const email = document.getElementById('emailinput').value;
     console.log(email);
     // email array 
     const mailDatabase = [
