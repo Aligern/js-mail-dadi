@@ -8,16 +8,16 @@ button.addEventListener('click', function(){
     console.log(email);
     // email array 
     const mailDatabase = [
-        "email-1@gmail.com",
-        "email-2@gmail.com",
-        "email-3@gmail.com",
-        "email-4@gmail.com"
+        "email-1@gmail.com",// 0
+        "email-2@gmail.com",// 1
+        "email-3@gmail.com",// 2
+        "email-4@gmail.com" // 3
 ];
-    console.log(mailDatabase);
+    console.log(mailDatabase.length);
     for (let i = 0; i < mailDatabase.length; i++) {
-        console.log(i);
+        console.log(mailDatabase[i]);
+        let mailAddress = mailDatabase[i];
+        console.log(mailAddress);
     }
-
 }
 );
-
