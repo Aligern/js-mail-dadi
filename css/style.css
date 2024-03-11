@@ -1,0 +1,18 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+.email-check, .dice-game {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #193D3D;
+    color: white;
+}
+
+.ls-bg {
+    background-color: #1D2A35;
+}

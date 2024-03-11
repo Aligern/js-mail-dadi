@@ -1,9 +1,7 @@
 // email check 
-
 // this variable is our button
 const button = document.querySelector('.btn.btn-outline-dark');
 console.log(button);
-
 
 // here we explain the machine how to do the check
 button.addEventListener('click', function(){
